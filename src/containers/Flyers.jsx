@@ -76,7 +76,7 @@ const Flyers = () => {
 
   const getStoredFavotites = () => {
     if (localStorage) {
-      setFavourites(JSON.parse(localStorage.favourites));
+      localStorage.favourites && localStorage.favourites.length && setFavourites(JSON.parse(localStorage.favourites));
     } else {
       let favoritesFromCookie = [];
       const cookieName = 'favourites=';
@@ -89,7 +89,7 @@ const Flyers = () => {
           favoritesFromCookie = cookie.substring(cookieName.length, cookie.length);
         }
       }
-      setFavourites(JSON.parse(favoritesFromCookie));
+      favoritesFromCookie && localStorage.favourites.length && setFavourites(JSON.parse(favoritesFromCookie));
     }
   }
 
