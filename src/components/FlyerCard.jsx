@@ -79,7 +79,7 @@ const FlyerCard = (props) => {
 
   return (
     <Card className={classes.root}>
-      <LazyLoad offset={300}>
+      <LazyLoad offset={600}>
         {cardContent}
       </LazyLoad>
     </Card>         
