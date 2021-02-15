@@ -27,7 +27,7 @@ const Header = (props) => {
           <IconButton className={classes.menuButton} edge="start" color="inherit" aria-label="menu" onClick={props.onClickMenu}>
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={classes.title}>
+          <Typography  variant="h6" component="h1" className={classes.title}>
             ShopFully
           </Typography>
           {/* <Button color="inherit">Categories</Button> */}

@@ -18,9 +18,9 @@ const Layout = (props) => {
         favourites={props.favourites}
         clickRemove={props.clickRemove}
         />
-      <div style={{ padding: '76px 10px 0' }}>
+      <main style={{ padding: '76px 10px 0' }}>
         {props.children}
-      </div>
+      </main>
     </>
   )
 };
