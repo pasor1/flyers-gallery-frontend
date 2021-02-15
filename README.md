@@ -1,6 +1,8 @@
 # Demo
 
-**[Woking Demo](https://zen-payne-8c3860.netlify.app)**.
+**[Woking Demo](https://zen-payne-8c3860.netlify.app)**
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/97b02b78-986d-43b5-8bce-cc9a97c6c1bb/deploy-status)](https://zen-payne-8c3860.netlify.app)
 
 # Getting Started with Create React App
 
