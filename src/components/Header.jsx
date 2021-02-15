@@ -22,7 +22,7 @@ const Header = (props) => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <AppBar position="fixed" color="primary">
+      <AppBar position="fixed" color="primary" style={{opacity:0.97}}>
         <Toolbar>
           <IconButton className={classes.menuButton} edge="start" color="inherit" aria-label="menu" onClick={props.onClickMenu}>
             <MenuIcon />
