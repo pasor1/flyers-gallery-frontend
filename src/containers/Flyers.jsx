@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import ErrorOutlineIcon from '@material-ui/icons/ErrorOutline';
 import Dialog from '@material-ui/core/Dialog';
 import Grid from '@material-ui/core/Grid';
-import axios from 'axios';
+import axios from '../axiosConfig';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -48,7 +48,7 @@ const Flyers = () => {
   }, [favourites])
 
   const getFlyers = () => {
-    axios.get('https://j9ukgabfd0.execute-api.eu-south-1.amazonaws.com/dev/api/flyers?page=1&limit=100')
+    axios.get('api/flyers?page=1&limit=100')
       .then(response => {
         //console.log(response.data);
         setflyers(response.data);
