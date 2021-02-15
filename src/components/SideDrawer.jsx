@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
+import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import Typography from '@material-ui/core/Typography';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
@@ -35,7 +36,7 @@ const SideDrawer = (props) => {
   const classes = useStyles();
 
   return (
-    <Drawer anchor="left" open={props.drawerStatus} onClose={props.toggleDrawler}>
+    <SwipeableDrawer anchor="left" open={props.drawerStatus} onClose={props.toggleDrawler}>
       <div className={classes.drawerContainer}>
         <div className={classes.backButton} onClick={props.toggleDrawler}>
         <IconButton aria-label="close" color="primary">
@@ -76,7 +77,7 @@ const SideDrawer = (props) => {
         
         <Divider />
       </div>
-    </Drawer>
+    </SwipeableDrawer>
   )
 }
 
