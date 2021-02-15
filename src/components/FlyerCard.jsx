@@ -1,5 +1,5 @@
 import React from 'react';
-import Skeleton from "react-loading-skeleton";
+import Skeleton from '@material-ui/lab/Skeleton';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -63,18 +63,16 @@ const FlyerCard = (props) => {
     </>
     :
     <>
-      <Skeleton count={1} height={110} style={{ padding: '10px', borderRadius: 0 }} />
+      <Skeleton variant="rect" width={160} height={110} />
       <div className={classes.caption}>
-      <p>
-      <Skeleton count={1} height={18} width={90} />
-      </p>
-      <p>
-      <Skeleton count={1} height={18} width={140} />
-      </p>
-      <p>
-      <Skeleton count={1} height={18} width={110} />
-      </p>
+        <Skeleton height={18} width={90} />
+        <Skeleton height={18} width={140} />
+        <Skeleton height={18} width={60} />
+        <Skeleton height={18} width={110} />
       </div>
+      <CardActions className={classes.footer}>
+        <IconButton aria-label="Loding..."><FavoriteIconBorder color="disabled"/></IconButton>
+      </CardActions>
     </>
 
   return (
