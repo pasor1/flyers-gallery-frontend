@@ -35,7 +35,7 @@ const SideDrawer = (props) => {
   const classes = useStyles();
 
   return (
-    <SwipeableDrawer anchor="left" open={props.drawerStatus} onClose={props.toggleDrawler}>
+    <SwipeableDrawer anchor="left" open={props.drawerStatus} onClose={props.toggleDrawler} onOpen={props.toggleDrawler}>
       <div className={classes.drawerContainer}>
         <div className={classes.backButton} onClick={props.toggleDrawler}>
         <IconButton aria-label="close" color="primary">

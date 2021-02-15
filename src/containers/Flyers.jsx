@@ -113,9 +113,9 @@ const Flyers = () => {
           </Typography>
           </Dialog>
       }   
-      <Grid container className={classes.root} spacing={2}>
+      <Grid container className={classes.root}>
         <Grid item xs={12}>
-          <Grid container justify="center" spacing={2} item xs={12}>
+          <Grid container justify="center" spacing={2} item md={12}>
             {flyers.map(flyer => (
               <Grid item key={flyer.id}>
                 <FlyerCard
