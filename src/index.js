@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import App from './App';
-import 'core-js/features/number/is-nan';
+import 'core-js/es';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
