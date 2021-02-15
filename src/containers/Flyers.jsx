@@ -109,7 +109,7 @@ const Flyers = () => {
           <Dialog aria-labelledby="Error" open={true} onClose={() => setError(false)}>
           <Typography variant="h6" className={classes.errorDialogContent}>
             <ErrorOutlineIcon style={{ fontSize: 100, color: '#999', marginRight:20}}/>
-            Sorry, something went wrong ...
+            Sorry, your device is offline ...
           </Typography>
           </Dialog>
       }   
