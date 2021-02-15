@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^12.7.0",
     "axios": "^0.21.1",
     "react": "^17.0.1",
+    "react-app-polyfill": "^2.0.0",
     "react-dom": "^17.0.1",
     "react-lazyload": "^3.2.0",
     "react-loading-skeleton": "^2.1.1",
@@ -45,12 +46,13 @@
       ">0.2%",
       "not dead",
       "not op_mini all",
-      "IE 11"
+      "ie 11"
     ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version"
+      "last 1 safari version",
+      "ie 11"
     ]
   }
 }
