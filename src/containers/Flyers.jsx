@@ -82,7 +82,7 @@ const Flyers = () => {
       const cookieName = 'favourites=';
       const cookieArray = document.cookie.split(';');
       for (let cookie of cookieArray) {
-        while (cookie.charAt(0) === ' ') {
+        if (cookie.charAt(0) === ' ') {
           cookie = cookie.substring(1, cookie.length);
         }
         if (cookie.indexOf(cookieName) === 0) {
