@@ -28,7 +28,7 @@ const Header = (props) => {
             <MenuIcon />
           </IconButton>
           <Typography  variant="h6" component="h1" className={classes.title}>
-            ShopFully
+            Flyers Gallery
           </Typography>
           {/* <Button color="inherit">Categories</Button> */}
         </Toolbar>
